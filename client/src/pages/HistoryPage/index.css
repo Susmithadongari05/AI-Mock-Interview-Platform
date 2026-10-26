@@ -1,0 +1,131 @@
+
+/* PREMIUM HISTORY PAGE THEME */
+.history-page {
+  min-height: 100vh;
+  padding: 42px 24px;
+  color: #f3f5ff;
+  background:
+    radial-gradient(ellipse at 10% 0%, rgba(109, 76, 220, 0.12), transparent 40%),
+    #080b16;
+}
+
+.history-container {
+  max-width: 1100px;
+  gap: 28px;
+}
+
+.history-header-row {
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.18);
+}
+
+.history-heading {
+  color: #f8faff;
+  font-size: clamp(26px, 4vw, 36px);
+  letter-spacing: -0.8px;
+}
+
+.history-count-badge {
+  color: #d8ccff;
+  background: rgba(139, 92, 246, 0.16);
+  border: 1px solid rgba(139, 92, 246, 0.28);
+  border-radius: 999px;
+}
+
+.history-clear-btn {
+  color: #fda4af;
+  border-radius: 9px;
+}
+
+.history-clear-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.history-loading-state {
+  color: #f3f5ff;
+}
+
+.history-loading-text,
+.history-empty-desc,
+.history-page-info {
+  color: #9ba7c2;
+}
+
+.history-empty-state {
+  padding: 64px 24px;
+  border: 1px dashed #34415f;
+  border-radius: 20px;
+  background: rgba(17, 25, 45, 0.65);
+}
+
+.history-empty-icon {
+  color: #a78bfa;
+  font-size: 52px;
+}
+
+.history-empty-heading {
+  color: #f3f5ff;
+}
+
+.history-start-btn {
+  color: #ffffff;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  border-radius: 12px;
+  padding: 13px 26px;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.2);
+}
+
+.history-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 22px;
+}
+
+.history-grid > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  background: linear-gradient(145deg, #151d33, #101629);
+  color: #e2e8f0;
+  border: 1px solid rgba(167, 139, 250, 0.16);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.history-grid > *:hover {
+  transform: translateY(-4px);
+  border-color: rgba(167, 139, 250, 0.5);
+}
+
+.history-pagination {
+  gap: 18px;
+  padding-top: 16px;
+}
+
+.history-page-btn {
+  color: #ddd6fe;
+  background: #151d33;
+  border: 1px solid #394463;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.history-page-btn:not(.history-page-btn-disabled):hover {
+  color: #ffffff;
+  background: #252044;
+  border-color: #8b5cf6;
+}
+
+@media (max-width: 768px) {
+  .history-page {
+    padding: 26px 16px;
+  }
+
+  .history-header-row {
+    align-items: flex-start;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+}
